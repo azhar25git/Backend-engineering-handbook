@@ -1,4 +1,4 @@
-# Backend Communication Design Patterns
+## Backend Communication Design Patterns
 Backend communication design patterns are reusable solutions to common problems that backend developers encounter when designing systems that communicate with other systems or clients. These patterns provide a structure for organizing code that makes it more maintainable, modular, and scalable. Some of the common backend communication design patterns are:
 
 - **Request Response**: This pattern involves a client sending a request to a server and waiting for a response. The server processes the request and sends back a response to the client. This pattern is simple and widely used, but it can also be inefficient and slow if the server takes a long time to process the request or if the network is unreliable. Examples of protocols that use this pattern are HTTP, gRPC, and WebRTC.
@@ -19,11 +19,8 @@ Source: Conversation with Bing, 7/4/2023
 
 
 
-# Protocols
+## Protocols
 Protocols are a set of rules or procedures for transmitting data between electronic devices, such as computers. Protocols are like a common language for computers that enables them to communicate with each other regardless of their software and hardware differences. Protocols are established by international or industrywide organizations and are often discussed in terms of which OSI model layer they belong to.
-
-# Protocols Intro
-Protocols Intro is an introduction to the concept of protocols and why they are important for networking. Protocols Intro explains that protocols provide a structure for organizing code that makes it more maintainable, modular, and scalable. Protocols Intro also explains that protocols are not specific to any particular programming language or platform, but can be applied to any software system.
 
 # Protocol Properties
 Protocol Properties are the characteristics or features of a protocol that define how it works and what it can do. Protocol Properties include things like reliability, security, efficiency, scalability, and compatibility. Protocol Properties can vary depending on the type and purpose of the protocol.
@@ -99,11 +96,8 @@ Source: Conversation with Bing, 7/4/2023
 
 
 
-# Many ways to HTTPS
+## Many ways to HTTPS
 Many ways to HTTPS are different methods or techniques for securing web traffic using the HTTPS protocol. HTTPS is an extension of the HTTP protocol that encrypts and authenticates data transmission over the Internet. HTTPS uses certificates to verify the identity of the communicating parties and uses TLS (Transport Layer Security) or QUIC (Quick UDP Internet Connections) to protect the data from eavesdropping, tampering, or forgery. Many ways to HTTPS can improve performance, efficiency, and reliability of web communication.
-
-# HTTPS Communication Basics Intro
-HTTPS Communication Basics Intro is an introduction to the concept and process of HTTPS communication. HTTPS Communication Basics Intro explains that HTTPS communication involves a client (such as a web browser) and a server (such as a web server) exchanging data over a secure connection. HTTPS Communication Basics Intro also explains that HTTPS communication requires a certificate from a trusted authority (such as Let's Encrypt) to establish trust between the client and the server. HTTPS Communication Basics Intro also explains that HTTPS communication uses different protocols (such as TCP, TLS, or QUIC) to establish and maintain the secure connection.
 
 # HTTPS over TCP with TLS 1.2
 HTTPS over TCP with TLS 1.2 is a method of HTTPS communication that uses TCP (Transmission Control Protocol) as the transport protocol and TLS 1.2 (Transport Layer Security version 1.2) as the security protocol. TCP is a reliable and ordered protocol that ensures data delivery by dividing data into packets, assigning sequence numbers, detecting errors, and retransmitting lost or corrupted packets. TLS 1.2 is a security protocol that provides encryption, authentication, and integrity for data transmission by using certificates, keys, and ciphers. HTTPS over TCP with TLS 1.2 works as follows:
@@ -187,11 +181,8 @@ Source: Conversation with Bing, 7/4/2023
 
 
 
-# Backend Execution Patterns
+## Backend Execution Patterns
 Backend execution patterns are design patterns that describe how backend systems handle concurrent requests, process data, and communicate with other systems. Backend execution patterns can improve the performance, scalability, and reliability of backend systems by optimizing the use of resources, such as CPU, memory, network, and disk. Backend execution patterns can also help developers write code that is more maintainable, modular, and testable.
-
-# Backend Execution Patterns Intro
-Backend execution patterns intro is an introduction to the concept and importance of backend execution patterns. Backend execution patterns intro explains that backend systems often face challenges such as high traffic volume, complex data processing, and distributed communication. Backend execution patterns intro also explains that backend systems need to balance between speed, efficiency, and quality of service. Backend execution patterns intro also explains that backend systems can benefit from using established design patterns that provide proven solutions to common problems.
 
 # The Process and The Thread and how they compete for CPU time
 The process and the thread are two fundamental concepts in computer science that relate to how programs run on a CPU. A process is an instance of a program that has its own memory space and resources. A thread is a unit of execution within a process that shares the same memory space and resources with other threads in the same process. Processes and threads compete for CPU time, which is the amount of time that the CPU allocates to execute them. The CPU uses scheduling algorithms to decide which process or thread to run next, based on factors such as priority, fairness, and efficiency.
@@ -299,7 +290,7 @@ A load balancer is a server that distributes incoming requests among a group of 
 How ChatGPT uses Server Sent Events
 ChatGPT is a web application that allows users to chat with an AI-powered chatbot based on GPT-3. ChatGPT uses Server Sent Events (SSE) to enable real-time communication between the client and the server. SSE is a technology that allows the server to push data to the client without requiring the client to request it. SSE works by creating a persistent connection between the client and the server, where the server can send messages in a text-based format. ChatGPT uses SSE to send chat messages from the server to the client as soon as they are generated by the chatbot.
 
-How I design software
+# How I design software
 I design software by following these steps:
 
 - Define the problem: I identify the main goal and scope of the software, as well as the requirements and constraints.
