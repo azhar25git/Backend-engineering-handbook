@@ -1,4 +1,4 @@
-## Backend Communication Design Patterns
+# Backend Communication Design Patterns
 Backend communication design patterns are reusable solutions to common problems that backend developers encounter when designing systems that communicate with other systems or clients. These patterns provide a structure for organizing code that makes it more maintainable, modular, and scalable. Some of the common backend communication design patterns are:
 
 - **Request Response**: This pattern involves a client sending a request to a server and waiting for a response. The server processes the request and sends back a response to the client. This pattern is simple and widely used, but it can also be inefficient and slow if the server takes a long time to process the request or if the network is unreliable. Examples of protocols that use this pattern are HTTP, gRPC, and WebRTC.
@@ -19,13 +19,13 @@ Source: Conversation with Bing, 7/4/2023
 
 
 
-## Protocols
+# Protocols
 Protocols are a set of rules or procedures for transmitting data between electronic devices, such as computers. Protocols are like a common language for computers that enables them to communicate with each other regardless of their software and hardware differences. Protocols are established by international or industrywide organizations and are often discussed in terms of which OSI model layer they belong to.
 
-# Protocol Properties
+## Protocol Properties
 Protocol Properties are the characteristics or features of a protocol that define how it works and what it can do. Protocol Properties include things like reliability, security, efficiency, scalability, and compatibility. Protocol Properties can vary depending on the type and purpose of the protocol.
 
-# OSI Model
+## OSI Model
 OSI Model is an abstract representation of how the Internet works. OSI Model contains 7 layers, with each layer representing a different category of networking functions. OSI Model helps developers understand how different protocols work together to enable communication across networks. The 7 layers of the OSI Model are:
 
 - **Application Layer**: This layer provides services for user applications, such as web browsers, email clients, or file transfer programs. Examples of protocols that operate on this layer are HTTP, SMTP, and FTP.
@@ -36,25 +36,25 @@ OSI Model is an abstract representation of how the Internet works. OSI Model con
 - **Data Link Layer**: This layer transfers data between devices on the same network segment or link. Examples of protocols that operate on this layer are Ethernet, Wi-Fi, and PPP.
 - **Physical Layer**: This layer defines the physical characteristics of the transmission medium, such as voltage levels, cable types, or wireless frequencies. Examples of protocols that operate on this layer are USB, Bluetooth, and DSL.
 
-# Internet Protocol
+## Internet Protocol
 Internet Protocol (IP) is a network layer protocol that is responsible for routing data across networks. IP assigns a unique address to each device on the network and uses these addresses to determine the best path for data packets to reach their destination. IP also supports fragmentation and reassembly of packets if they are too large for the transmission medium. IP is the most widely used protocol on the Internet and is often paired with TCP to form TCP/IP.
 
-# UDP
+## UDP
 UDP (User Datagram Protocol) is a transport layer protocol that provides fast and efficient data transmission without guaranteeing reliability or order. UDP does not divide data into packets, assign sequence numbers, detect errors, or retransmit lost or corrupted packets. UDP is suitable for applications that require real-time communication or low latency, such as video streaming, online gaming, or voice over IP (VoIP).
 
-# TCP
+## TCP
 TCP (Transmission Control Protocol) is a transport layer protocol that provides reliable and ordered data transmission by dividing data into packets, assigning sequence numbers, detecting errors, and retransmitting lost or corrupted packets. TCP also supports flow control and congestion control to regulate the amount and speed of data sent over the network. TCP is suitable for applications that require accuracy and completeness of data, such as web browsing, email, or file transfer.
 
-# TLS
+## TLS
 TLS (Transport Layer Security) is a presentation layer protocol that provides security and encryption for data transmission over the Internet. TLS uses certificates to verify the identity of the communicating parties and uses symmetric-key encryption to protect the data from eavesdropping, tampering, or forgery. TLS is widely used for securing web traffic (HTTPS), email (SMTPS), or instant messaging (XMPP).
 
-# HTTP/1.1
+## HTTP/1.1
 HTTP/1.1 (Hypertext Transfer Protocol version 1.1) is an application layer protocol that defines how web browsers and web servers communicate over the Internet. HTTP/1.1 uses a request-response model where the browser sends a request for a web resource (such as a web page, an image, or a video) and the server sends back a response with the requested resource or an error message. HTTP/1.1 supports persistent connections, meaning that multiple requests and responses can be sent over the same TCP connection without closing and reopening it. HTTP/1.1 also supports caching, compression, and authentication.
 
-# WebSockets
+## WebSockets
 WebSockets is an application layer protocol that enables bidirectional and real-time communication between web browsers and web servers. WebSockets uses a single TCP connection to establish a persistent and full-duplex channel where both parties can send and receive data at any time. WebSockets is suitable for applications that require interactive and dynamic web content, such as chat apps, online games, or live updates.
 
-# HTTP/2
+## HTTP/2
 HTTP/2 (Hypertext Transfer Protocol version 2) is an application layer protocol that improves the performance and efficiency of HTTP/1.1 by introducing several new features, such as:
 
 - **Multiplexing**: This feature allows multiple requests and responses to be sent over the same TCP connection without blocking each other.
@@ -62,7 +62,7 @@ HTTP/2 (Hypertext Transfer Protocol version 2) is an application layer protocol 
 - **Server Push**: This feature allows the server to send additional resources to the browser before they are requested, such as images, scripts, or stylesheets.
 - **Stream Prioritization**: This feature allows the browser to indicate the relative importance of each request to the server, so that the server can allocate resources accordingly.
 
-# HTTP/3
+## HTTP/3
 HTTP/3 (Hypertext Transfer Protocol version 3) is an application layer protocol that improves the performance and reliability of HTTP/2 by using QUIC (Quick UDP Internet Connections) as the underlying transport protocol instead of TCP. QUIC is a new protocol that combines the features of UDP and TCP, such as:
 
 - **Connectionless**: QUIC does not require a handshake to establish a connection, which reduces latency and overhead.
@@ -71,7 +71,7 @@ HTTP/3 (Hypertext Transfer Protocol version 3) is an application layer protocol 
 - **Congestion Controlled**: QUIC implements congestion control algorithms to regulate the amount and speed of data sent over the network.
 - **Error Corrected**: QUIC uses forward error correction techniques to recover from packet loss without retransmission, which improves reliability.
 
-# gRPC
+## gRPC
 gRPC (gRPC Remote Procedure Calls) is an application layer protocol that enables efficient and scalable communication between microservices or distributed systems. gRPC uses HTTP/2 as the transport protocol and Protocol Buffers as the data format. Protocol Buffers are a binary serialization format that are compact, fast, and easy to use. gRPC supports four types of RPCs:
 
 - **Unary RPCs**: These are simple request-response RPCs where the client sends one request and receives one response from the server.
@@ -79,7 +79,7 @@ gRPC (gRPC Remote Procedure Calls) is an application layer protocol that enables
 - **Client Streaming RPCs**: These are RPCs where the client sends multiple requests in a stream and receives one response from the server.
 - **Bidirectional Streaming RPCs**: These are RPCs where both the client and the server send multiple requests and responses in streams.
 
-# WebRTC
+## WebRTC
 WebRTC (Web Real-Time Communication) is an application layer protocol that enables peer-to-peer and real-time communication of audio, video, and data between web browsers or mobile devices. WebRTC uses UDP as the transport protocol and supports encryption, compression, and error correction. WebRTC also uses several other protocols to establish and maintain connections, such as:
 
 - **ICE (Interactive Connectivity Establishment)**: This protocol helps find the best possible path for data transmission between peers by using techniques such as NAT traversal, STUN (Session Traversal Utilities for NAT), TURN (Traversal Using Relays around NAT), or relay servers.
@@ -96,10 +96,10 @@ Source: Conversation with Bing, 7/4/2023
 
 
 
-## Many ways to HTTPS
+# Many ways to HTTPS
 Many ways to HTTPS are different methods or techniques for securing web traffic using the HTTPS protocol. HTTPS is an extension of the HTTP protocol that encrypts and authenticates data transmission over the Internet. HTTPS uses certificates to verify the identity of the communicating parties and uses TLS (Transport Layer Security) or QUIC (Quick UDP Internet Connections) to protect the data from eavesdropping, tampering, or forgery. Many ways to HTTPS can improve performance, efficiency, and reliability of web communication.
 
-# HTTPS over TCP with TLS 1.2
+## HTTPS over TCP with TLS 1.2
 HTTPS over TCP with TLS 1.2 is a method of HTTPS communication that uses TCP (Transmission Control Protocol) as the transport protocol and TLS 1.2 (Transport Layer Security version 1.2) as the security protocol. TCP is a reliable and ordered protocol that ensures data delivery by dividing data into packets, assigning sequence numbers, detecting errors, and retransmitting lost or corrupted packets. TLS 1.2 is a security protocol that provides encryption, authentication, and integrity for data transmission by using certificates, keys, and ciphers. HTTPS over TCP with TLS 1.2 works as follows:
 
 - The client initiates a TCP connection to the server on port 443.
@@ -110,7 +110,7 @@ HTTPS over TCP with TLS 1.2 is a method of HTTPS communication that uses TCP (Tr
 - The client and the server exchange TLS Finished messages to confirm that they have successfully established a secure connection.
 - The client and the server exchange HTTP messages over the secure connection.
 
-# HTTPS over TCP with TLS 1.3
+## HTTPS over TCP with TLS 1.3
 HTTPS over TCP with TLS 1.3 is a method of HTTPS communication that uses TCP as the transport protocol and TLS 1.3 (Transport Layer Security version 1.3) as the security protocol. TLS 1.3 is an improved version of TLS 1.2 that provides better performance, security, and privacy for data transmission by using newer algorithms, modes, and features. HTTPS over TCP with TLS 1.3 works as follows:
 
 - The client initiates a TCP connection to the server on port 443.
@@ -121,7 +121,7 @@ HTTPS over TCP with TLS 1.3 is a method of HTTPS communication that uses TCP as 
 - The client switches to encrypted mode using the shared secret key.
 - The client and the server exchange HTTP messages over the secure connection.
 
-# HTTPS over QUIC (HTTP/3)
+## HTTPS over QUIC (HTTP/3)
 HTTPS over QUIC (HTTP/3) is a method of HTTPS communication that uses QUIC (Quick UDP Internet Connections) as both the transport protocol and the security protocol. QUIC is a new protocol that combines the features of UDP (User Datagram Protocol) and TCP/TLS, such as:
 
 - **Connectionless**: QUIC does not require a handshake to establish a connection, which reduces latency and overhead.
@@ -140,7 +140,7 @@ HTTPS over QUIC (HTTP/3) works as follows:
 - The client switches to encrypted mode using the connection ID and the shared secret key derived from the TLS handshake.
 - The client and the server exchange HTTP/3 messages over the secure connection.
 
-# HTTPS over TFO with TLS 1.3
+## HTTPS over TFO with TLS 1.3
 HTTPS over TFO with TLS 1.3 is a method of HTTPS communication that uses TCP Fast Open (TFO) as an optimization technique for TCP with TLS 1.3. TFO is a feature that allows data to be sent during the TCP handshake, which reduces latency and overhead. TFO works by using cookies to identify previous connections and resume them without performing a full handshake. HTTPS over TFO with TLS 1.3 works as follows:
 
 - The client initiates a TCP connection to the server on port 443 with the TFO option enabled.
@@ -150,7 +150,7 @@ HTTPS over TFO with TLS 1.3 is a method of HTTPS communication that uses TCP Fas
 - The server verifies the client's certificate and public key if received, sends a TCP ACK packet to the client, containing a TLS Finished message, and switches to encrypted mode using the shared secret key derived from the TLS handshake.
 - The client and the server exchange HTTP messages over the secure connection.
 
-# HTTPS over TCP with TLS 1.3 and 0RTT
+## HTTPS over TCP with TLS 1.3 and 0RTT
 HTTPS over TCP with TLS 1.3 and 0RTT is a method of HTTPS communication that uses TCP as the transport protocol and TLS 1.3 as the security protocol with zero round-trip time (0RTT) resumption. 0RTT resumption is a feature that allows data to be sent before completing the TLS handshake, which reduces latency and overhead. 0RTT resumption works by using pre-shared keys (PSKs) to identify previous connections and resume them without performing a full handshake. HTTPS over TCP with TLS 1.3 and 0RTT works as follows:
 
 - The client initiates a TCP connection to the server on port 443 with the 0RTT option enabled.
@@ -162,7 +162,7 @@ HTTPS over TCP with TLS 1.3 and 0RTT is a method of HTTPS communication that use
 - The server verifies the client's certificate and public key if received, sends a TCP ACK packet to the client, containing a TLS Finished message, and switches to encrypted mode using either the PSK or the shared secret key derived from the TLS handshake depending on whether early data was accepted or rejected.
 - The client and the server exchange HTTP messages over the secure connection.
 
-# HTTPS over QUIC with 0RTT
+## HTTPS over QUIC with 0RTT
 HTTPS over QUIC with 0RTT is a method of HTTPS communication that uses QUIC as both the transport protocol and the security protocol with zero round-trip time (0RTT) resumption. 0RTT resumption is a feature that allows data to be sent before completing the QUIC handshake, which reduces latency and overhead. 0RTT resumption works by using tokens to identify previous connections and resume them without performing a full handshake. HTTPS over QUIC with 0RTT works as follows:
 
 - The client initiates a QUIC connection to the server on port 443 with the 0RTT option enabled.
@@ -181,29 +181,29 @@ Source: Conversation with Bing, 7/4/2023
 
 
 
-## Backend Execution Patterns
+# Backend Execution Patterns
 Backend execution patterns are design patterns that describe how backend systems handle concurrent requests, process data, and communicate with other systems. Backend execution patterns can improve the performance, scalability, and reliability of backend systems by optimizing the use of resources, such as CPU, memory, network, and disk. Backend execution patterns can also help developers write code that is more maintainable, modular, and testable.
 
-# The Process and The Thread and how they compete for CPU time
+## The Process and The Thread and how they compete for CPU time
 The process and the thread are two fundamental concepts in computer science that relate to how programs run on a CPU. A process is an instance of a program that has its own memory space and resources. A thread is a unit of execution within a process that shares the same memory space and resources with other threads in the same process. Processes and threads compete for CPU time, which is the amount of time that the CPU allocates to execute them. The CPU uses scheduling algorithms to decide which process or thread to run next, based on factors such as priority, fairness, and efficiency.
 
-# How The Backend Accepts Connections
+## How The Backend Accepts Connections
 How the backend accepts connections is a topic that describes how backend systems establish communication with clients or other systems over a network. How the backend accepts connections involves using sockets, which are endpoints of communication between two devices on a network. How the backend accepts connections also involves using protocols, which are sets of rules for formatting and exchanging data over a network. How the backend accepts connections also involves using ports, which are numbers that identify specific services or applications on a device.
 
-# Reading and Sending Socket Data
+## Reading and Sending Socket Data
 Reading and sending socket data is a topic that describes how backend systems read data from or send data to sockets over a network. Reading and sending socket data involves using streams, which are sequences of bytes that flow from one device to another. Reading and sending socket data also involves using buffers, which are temporary storage areas for bytes before they are read from or written to streams. Reading and sending socket data also involves using encoding and decoding techniques, which are methods for converting bytes into meaningful data formats, such as text or binary.
 
-# The Listener, The Acceptor and the Reader
+## The Listener, The Acceptor and the Reader
 The listener, the acceptor and the reader are three components of a backend system that handle incoming requests from clients or other systems over a network. The listener is responsible for listening for incoming connections on a specific port and creating sockets for them. The acceptor is responsible for accepting incoming connections from sockets and creating threads or processes for them. The reader is responsible for reading data from sockets and processing them according to the application logic.
 
-# Single Listener, Acceptor and Reader Thread Execution Pattern
+## Single Listener, Acceptor and Reader Thread Execution Pattern
 Single listener, acceptor and reader thread execution pattern is a backend execution pattern that uses a single thread to perform all three functions: listening, accepting, and reading. Single listener, acceptor and reader thread execution pattern is simple and easy to implement, but it has several drawbacks:
 
 - It can only handle one request at a time, which limits its scalability and performance.
 - It blocks the thread while waiting for incoming connections or reading data from sockets, which wastes CPU resources.
 - It cannot handle concurrent requests from multiple clients or systems, which reduces its reliability and quality of service.
 
-# Single Listener, Acceptor and Multiple Readers Thread Execution Pattern
+## Single Listener, Acceptor and Multiple Readers Thread Execution Pattern
 Single listener, acceptor and multiple readers thread execution pattern is a backend execution pattern that uses a single thread to perform two functions: listening and accepting; and multiple threads to perform one function: reading. Single listener, acceptor and multiple readers thread execution pattern is an improvement over the previous pattern in several ways:
 
 - It can handle multiple requests concurrently by creating a new thread for each accepted connection.
@@ -216,7 +216,7 @@ However, this pattern also has some drawbacks:
 - It does not limit the number of threads created, which can overload the system if there are too many requests.
 - It does not reuse threads for subsequent requests, which wastes resources.
 
-# Single Listener, Acceptor, Reader with Message Load Balancing Execution Pattern
+## Single Listener, Acceptor, Reader with Message Load Balancing Execution Pattern
 Single listener, acceptor, reader with message load balancing execution pattern is a backend execution pattern that uses a single thread to perform two functions: listening and accepting; and multiple threads to perform one function: reading. However, unlike the previous pattern, this pattern uses a message queue to store and distribute incoming requests among the reader threads. Single listener, acceptor, reader with message load balancing execution pattern is an improvement over the previous pattern in several ways:
 
 - It limits the number of threads created by using a fixed thread pool for reading.
@@ -229,7 +229,7 @@ However, this pattern also has some drawbacks:
 - It may introduce latency and inconsistency by using asynchronous communication between the listener and the readers.
 - It may lose messages or create duplicates if the message queue or the load balancer fails.
 
-# Multiple Accepter Threads on a Single Socket Execution Pattern
+## Multiple Accepter Threads on a Single Socket Execution Pattern
 Multiple accepter threads on a single socket execution pattern is a backend execution pattern that uses multiple threads to perform two functions: listening and accepting; and a single thread to perform one function: reading. Multiple accepter threads on a single socket execution pattern is an alternative to the previous patterns that uses a single socket for listening and accepting connections, and multiple threads for accepting them. Multiple accepter threads on a single socket execution pattern has some advantages:
 
 - It reduces the number of sockets used by using a single socket for listening and accepting.
@@ -242,7 +242,7 @@ However, this pattern also has some drawbacks:
 - It may cause contention and performance degradation if there are too many accepter threads competing for the same socket.
 - It may not be supported by some operating systems or platforms.
 
-# Multiple Listeners, Acceptors and Readers with Socket Sharding Execution Pattern
+## Multiple Listeners, Acceptors and Readers with Socket Sharding Execution Pattern
 Multiple listeners, acceptors and readers with socket sharding execution pattern is a backend execution pattern that uses multiple threads to perform all three functions: listening, accepting, and reading. Multiple listeners, acceptors and readers with socket sharding execution pattern is an advanced pattern that uses multiple sockets for listening and accepting connections, and multiple threads for accepting and reading them. Multiple listeners, acceptors and readers with socket sharding execution pattern has some advantages:
 
 - It scales well with high traffic volume by using multiple sockets and threads for handling requests.
@@ -255,14 +255,14 @@ However, this pattern also has some drawbacks:
 - It may require special hardware or software support to implement socket sharding techniques.
 - It may cause inconsistency or duplication if different sockets or threads process the same request.
 
-# Backend Idempotency
+## Backend Idempotency
 Backend idempotency is a property of backend systems that ensures that repeated requests have the same effect as a single request. Backend idempotency is important for ensuring reliability and consistency of backend systems, especially in distributed or concurrent environments. Backend idempotency can be achieved by using techniques such as:
 
 - Using unique identifiers or timestamps for requests to avoid duplication or reordering.
 - Using conditional requests or optimistic locking to avoid conflicts or overwriting.
 - Using idempotent operations or methods that do not change the state of the system or return the same result regardless of how many times they are called.
 
-# Nagle’s Algorithm
+## Nagle’s Algorithm
 Nagle's algorithm is an optimization technique for TCP that reduces network congestion by combining small packets into larger ones before sending them over the network. Nagle's algorithm works by delaying the transmission of small packets until either:
 
 - A full-sized packet is accumulated in the buffer.
@@ -280,17 +280,17 @@ Source: Conversation with Bing, 7/4/2023
 # Proxying and Load Balancing
 Proxying and load balancing are two techniques for improving the performance, scalability, and reliability of web applications and services. Proxying and load balancing involve using intermediate servers that act as intermediaries between clients and backend servers, performing functions that enhance efficiency.
 
-# Proxy vs Reverse Proxy
+## Proxy vs Reverse Proxy
 A proxy is a server that acts on behalf of a client, forwarding requests to other servers and returning responses to the client. A proxy can be used for various purposes, such as filtering, caching, or anonymizing requests. A reverse proxy is a server that acts on behalf of a backend server, accepting requests from clients and forwarding them to the backend server. A reverse proxy can be used for various purposes, such as load balancing, security, or compression.
 
-# Layer 4 vs Layer 7 Load Balancers
+## Layer 4 vs Layer 7 Load Balancers
 A load balancer is a server that distributes incoming requests among a group of backend servers, in each case returning the response from the selected server to the appropriate client. A load balancer can operate at different layers of the OSI model, depending on how it inspects and manipulates the requests. A layer 4 load balancer operates at the transport layer, which means it only looks at the source and destination IP addresses and ports of the requests. A layer 4 load balancer can perform simple load balancing algorithms, such as round robin or least connections. A layer 7 load balancer operates at the application layer, which means it can look at the content and headers of the requests. A layer 7 load balancer can perform more complex load balancing algorithms, such as URL hashing or cookie-based persistence.
 
 # Extras
-How ChatGPT uses Server Sent Events
+## How ChatGPT uses Server Sent Events
 ChatGPT is a web application that allows users to chat with an AI-powered chatbot based on GPT-3. ChatGPT uses Server Sent Events (SSE) to enable real-time communication between the client and the server. SSE is a technology that allows the server to push data to the client without requiring the client to request it. SSE works by creating a persistent connection between the client and the server, where the server can send messages in a text-based format. ChatGPT uses SSE to send chat messages from the server to the client as soon as they are generated by the chatbot.
 
-# How I design software
+## How I design software
 I design software by following these steps:
 
 - Define the problem: I identify the main goal and scope of the software, as well as the requirements and constraints.
